@@ -31,6 +31,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   res = gets.strip
+  if songs.include? res
+    puts "Playing #{res}"
 end
 
 def list(songs)
