@@ -32,7 +32,7 @@ def play
 end
 
 def list(songs)
-  songs.each_with_index do |idx, song|
+  songs.each_with_index do |song, idx|
     trackNum = (idx + 1).to_s
     puts "#{trackNum}. #{song}"
   end
