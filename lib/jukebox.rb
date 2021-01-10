@@ -19,3 +19,18 @@ songs = [
 # users_name = gets.strip
 #
 # puts say_hello(users_name)
+
+def help
+end
+
+def play
+end
+
+def list
+end
+
+def exit
+end
+
+def run
+end
