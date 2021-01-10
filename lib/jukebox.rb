@@ -36,7 +36,7 @@ def play(songs)
   if songs.include? user_input
     puts "Playing #{res}"
   elsif user_input_as_int != 0 and (user_input_as_int - 1) <= songs.length()
-    idx = user_input.to_i - 1
+    idx = user_input_as_int - 1
     song = songs[idx]
     puts "Playing #{song}"
   else
