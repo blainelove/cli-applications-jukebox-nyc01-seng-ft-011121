@@ -30,7 +30,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  res = gets.strip
+  user_input = gets.strip
   if songs.include? res
     puts "Playing #{res}"
   elsif (res.to_i - 1) <= songs.length() and res.to_i != 0
