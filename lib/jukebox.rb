@@ -35,6 +35,7 @@ def list(songs)
   songs.each_with_index do |idx, song|
     trackNum = (idx + 1).to_s
     puts "#{trackNum}. #{song}"
+  end
 end
 
 def exit
