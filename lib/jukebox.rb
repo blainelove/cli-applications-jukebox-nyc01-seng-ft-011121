@@ -36,7 +36,7 @@ def play(songs)
   elsif (res.to_i - 1) <= songs.length()
     idx = [res.to_i - 1]
     song = songs[idx]
-    puts "Playing #{}"
+    puts "Playing #{song}"
   else
     puts "Invalid input, please try again"
   end
