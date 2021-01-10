@@ -33,7 +33,7 @@ def play(songs)
   res = gets.strip
   if songs.include? res
     puts "Playing #{res}"
-  elsif (res.to_i - 1) <= songs.length()
+  elsif (res.to_i - 1) <= songs.length() and res.to_i != 0
     idx = res.to_i - 1
     song = songs[idx]
     puts "Playing #{song}"
