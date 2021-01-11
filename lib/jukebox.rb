@@ -58,12 +58,15 @@ end
 def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
-  if user_input == "help"
-    help
-  if user_input == "list"
-    list(songs)
-  if user_input == "play"
-    play(songs)
-  if user_input == "exit"
-    exit_jukebox
+  while user_input != "exit" do
+    if user_input == "help"
+      help
+    if user_input == "list"
+      list(songs)
+    if user_input == "play"
+      play(songs)
+    end
+  end
+end
+  exit_jukebox
 end
