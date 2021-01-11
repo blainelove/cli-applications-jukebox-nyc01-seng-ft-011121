@@ -63,10 +63,12 @@ def run(songs)
       help
       puts "Please enter a command:"
       user_input = gets.strip
+    end
     if user_input == "list"
       list(songs)
       puts "Please enter a command:"
       user_input = gets.strip
+    end
     if user_input == "play"
       play(songs)
       puts "Please enter a command:"
